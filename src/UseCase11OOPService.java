@@ -9,8 +9,7 @@ public class UseCase11OOPService {
     }
     public boolean isPalindrome() {
         String cleaned = clean();
-        String reversed = new StringBuilder(cleaned).reverse().toString();
-        return cleaned.equals(reversed);
+        return cleaned.equals(new StringBuilder(cleaned).reverse().toString());
     }
     public static void main(String[] args) {
         System.out.println("============================================================");
